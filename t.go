@@ -11,6 +11,7 @@ type GoTest struct {
 }
 
 func (gt *GoTest) Expect(v any) *Expect {
+	print("test");
 	return &Expect{
 		t: gt.t,
 		v: v,
